@@ -86,8 +86,12 @@
                 <groupId>org.jboss.as.plugins</groupId>
                 <artifactId>jboss-as-maven-plugin</artifactId>
                 <version>7.9.Final</version>
-				<configuration>
-                	<port>9990</port>
+                <configuration>
+                	<hostname>localhost</hostname>
+		            <port>9990</port>
+		            <name>ecom.war</name>
+		            <username>admin</username>
+		            <password>P@55w0rd123</password>
                 </configuration>
             </plugin>
 			<plugin>
