@@ -85,7 +85,7 @@
 			<build>
 				<finalName>ecom</finalName>
 				<plugins>
-					<!-- <plugin>
+					<plugin>
 		                <groupId>org.jboss.as.plugins</groupId>
 		                <artifactId>jboss-as-maven-plugin</artifactId>
 		                <version>7.9.Final</version>
@@ -93,12 +93,10 @@
 		                	<hostname>localhost</hostname>
 				            <port>9990</port>
 				            <name>ecom.war</name>
-				            <username>admin</username>
-				            <password>P@55w0rd123</password>
 		                </configuration>
-		            </plugin> -->
+		            </plugin>
 		            
-		            <plugin>
+		            <!-- <plugin>
 		                <groupId>org.wildfly.plugins</groupId>
 		                <artifactId>wildfly-maven-plugin</artifactId>
 		                <version>1.1.0.Final</version>
@@ -111,7 +109,7 @@
 		                    <name>${project.build.finalName}.${project.packaging}</name>
 		                </configuration>
 		                <executions>
-		                    <!-- Undeploy the application on clean -->
+		                    Undeploy the application on clean
 		                    <execution>
 		                        <id>undeploy</id>
 		                        <phase>clean</phase>
@@ -123,7 +121,7 @@
 		                        </configuration>
 		                    </execution>
 		
-		                    <!-- Deploy the application on install -->
+		                    Deploy the application on install
 		                    <execution>
 		                        <id>deploy</id>
 		                        <phase>install</phase>
@@ -132,7 +130,7 @@
 		                        </goals>
 		                    </execution>
 		                </executions>
-		            </plugin>
+		            </plugin> -->
 		            
 					<plugin>
 						<groupId>org.springframework.boot</groupId>
