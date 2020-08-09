@@ -3,6 +3,7 @@ package com.sample.ecom.controller;
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -18,9 +19,10 @@ import com.sample.ecom.service.OrderService;
 import com.sample.ecom.vo.Order;
 
 @RestController
-@RequestMapping("/order/")
+@RequestMapping("/orders/")
 public class OrderController {
 	
+	@Autowired
 	private OrderService service;
 
 	@RequestMapping(value = "get", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)

@@ -51,11 +51,11 @@ public class OrderEntity extends BaseEntity {
 	@Column(name = "CANCEL_REASON")
 	private String cancelReason;
 	
-	@ManyToOne(targetEntity = CustomerEntity.class)
+	@ManyToOne
 	@JoinColumn(name = "CUSTOMER_ID", referencedColumnName = "CUSTOMER_ID", nullable = false)
 	private CustomerEntity customer;
 	
-	@OneToOne(targetEntity = ProductEntity.class)
+	@OneToOne
 	@JoinColumn(name = "PRODUCT_ID", referencedColumnName = "PRODUCT_ID", nullable = false)
 	private ProductEntity product;
 
