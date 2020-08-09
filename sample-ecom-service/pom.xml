@@ -99,7 +99,7 @@
             <plugin>
                 <groupId>org.wildfly.plugins</groupId>
                 <artifactId>wildfly-maven-plugin</artifactId>
-                <version>2.2.0.Final</version>
+                <version>2.1.0.Beta1</version>
                 <!-- <configuration>
                     <hostname>localhost</hostname>
                     <port>9990</port>
