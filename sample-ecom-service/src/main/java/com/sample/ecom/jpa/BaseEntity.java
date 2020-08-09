@@ -17,10 +17,13 @@ public class BaseEntity implements Serializable {
 	private Integer version;
 	
 	@Column(name = "CREATED_BY", nullable = false)
-	private String createdBy;
+	private String createdBy = "SYSTEM";
 	
 	@Column(name = "CREATED_DATE", nullable = false)
-	private Date createdDate;
+	private Date createdDate = new Date();
+	
+	@Column(name = "DEL_IND")
+	private String deleteIndicator;
 
 	public Integer getVersion() {
 		return version;
@@ -44,6 +47,14 @@ public class BaseEntity implements Serializable {
 
 	public void setCreatedDate(Date createdDate) {
 		this.createdDate = createdDate;
+	}
+
+	public String getDeleteIndicator() {
+		return deleteIndicator;
+	}
+
+	public void setDeleteIndicator(String deleteIndicator) {
+		this.deleteIndicator = deleteIndicator;
 	}
 
 }

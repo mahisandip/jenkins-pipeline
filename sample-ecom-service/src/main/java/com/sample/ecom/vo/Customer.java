@@ -1,6 +1,7 @@
 package com.sample.ecom.vo;
 
 import java.io.Serializable;
+import java.util.List;
 
 import org.springframework.lang.NonNull;
 
@@ -32,6 +33,9 @@ public class Customer implements Serializable {
 	@NonNull
 	@JsonProperty("email")
 	private String email;
+	
+	@JsonProperty("orders")
+	private List<Order> orders;
 
 	public Long getCustomerId() {
 		return customerId;
@@ -71,6 +75,14 @@ public class Customer implements Serializable {
 
 	public void setEmail(String email) {
 		this.email = email;
+	}
+
+	public List<Order> getOrders() {
+		return orders;
+	}
+
+	public void setOrders(List<Order> orders) {
+		this.orders = orders;
 	}
 
 }
