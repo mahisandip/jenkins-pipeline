@@ -96,7 +96,7 @@
                 </configuration>
             </plugin> -->
             
-             <plugin>
+            <!-- <plugin>
                 <groupId>org.wildfly.plugins</groupId>
                 <artifactId>wildfly-maven-plugin</artifactId>
                 <configuration>
@@ -107,7 +107,8 @@
                     <jboss-home>local-jboss-home</jboss-home>
                     <name>${project.build.finalName}.${project.packaging}</name>
                 </configuration>
-                <!-- <executions>
+                <executions>
+                    
                     <execution>
                         <id>undeploy</id>
                         <phase>clean</phase>
@@ -126,8 +127,8 @@
                             <goal>deploy</goal>
                         </goals>
                     </execution>
-                </executions> -->
-            </plugin> 
+                </executions>
+            </plugin> -->
             
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
