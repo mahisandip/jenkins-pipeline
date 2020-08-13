@@ -107,7 +107,7 @@
                     <password>P@55w0rd123</password> 
                     <jboss-home>local-jboss-home</jboss-home>
                     <name>${project.build.finalName}.${project.packaging}</name>
-                </configuration>
+                </configuration> -->
                 <executions>
                 
                     <execution>
@@ -120,7 +120,7 @@
                             <ignoreMissingDeployment>true</ignoreMissingDeployment>
                         </configuration>
                     </execution>
-l
+
                     <execution>
                         <id>deploy</id>
                         <phase>install</phase>
@@ -128,7 +128,7 @@ l
                             <goal>deploy</goal>
                         </goals>
                     </execution>
-                </executions> -->
+                </executions> 
             </plugin>
             
 			<plugin>
